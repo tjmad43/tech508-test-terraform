@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
     associate_public_ip_address = true
 
     vpc_security_group_ids = [
-    aws_security_group.allow_ssh.id]
+    aws_security_group.allow_ssh_mongodb.id]
     key_name = var.ssh_key
 
     tags = {
